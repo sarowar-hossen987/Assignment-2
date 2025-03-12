@@ -1,37 +1,50 @@
 // 1. Function to calculate the sum of two numbers
+let a = 5;
+let b = 10;
+
 function calculateSum(a, b) {
     return a + b;
-}
+}console.log(calculateSum(a, b));
+
 
 // 2. Function to check if a number is even
+
+let num = 35;
+
 function isEven(num) {
     return num % 2 === 0;
-}
+}console.log(isEven(num));
+
 
 // 3. Function to find the maximum number in an array
+
+let arr = [1, 5, 3, 9, 2];
+
 function findMax(arr) {
     return Math.max(...arr);
-}
+}console.log(findMax(arr));
 
 // 4. Function to filter odd numbers from an array
-function filterOddNumbers(arr) {
-    return arr.filter(num => num % 2 !== 0);
-}
+
+let array = [1, 2, 3, 4, 5];
+
+function filterOddNumbers(array) {
+    return array.filter(num => num % 2 !== 0);
+}console.log(filterOddNumbers(array));
 
 // 5. Function to count the number of words in a string
+
+let str = "Hello world! This is JavaScript.";
+
 function countWords(str) {
-    return str.trim().split(/\s+/).length;
-}
+    const word = str.trim().split(/\s+/)
+    word.length;
+} console.log(countWords(str));
 
 // 6. Function to remove duplicate elements from an array
-function removeDuplicates(arr) {
-    return [...new Set(arr)];
-}
 
-// Example usage:
-console.log(calculateSum(5, 10)); // 15
-console.log(isEven(4)); // true
-console.log(findMax([1, 5, 3, 9, 2])); // 9
-console.log(filterOddNumbers([1, 2, 3, 4, 5])); // [1, 3, 5]
-console.log(countWords("Hello world! This is JavaScript.")); // 5
-console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+let duplicateArray = [1, 2, 2, 3, 4, 4, 5];
+
+function removeDuplicates(duplicateArray) {
+    return [...new Set(duplicateArray)];
+}console.log(removeDuplicates(duplicateArray));
